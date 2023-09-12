@@ -17,24 +17,33 @@
     width: 30%;
     background-color: #2C2528;
     text-shadow: 2px 2px 5px #D3EAEE ;
+
 }
 
 .pStyle:hover{
-animation-name: floating;
+animation-name: floatin;
 animation-duration: 5s;
 animation-iteration-count: infinite;
-animation-timing-function:ease-in-out;
+animation-timing-function:ease-in;
 
 }
-@keyframes floating {
+@keyframes floatin {
     
     0% {transform:translate(-50%, -50%);
         border: 2px inset #b1a2a9;;}
-    50% {transform:translate(-50%, -20%);
+    100% {transform:translate(-50%, -20%);
         padding: 15px 50px;
         border: 2px outset #b1a2a9;;}
-    100% {transform: translate(-50%,-50%);
-        border:1px outset #b1a2a9;}
+}
+
+@keyframes floatOut {
+    0% {transform:translate(-50%, -20%);
+        padding: 15px 50px;
+        border: 2px outset #b1a2a9;;}
+    
+    100% {transform:translate(-50%, -50%);
+        border: 2px inset #b1a2a9;;}
+
 }
         
 .hStyle {
