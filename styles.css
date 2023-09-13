@@ -63,8 +63,8 @@
 
 .navbar {
     height: 5rem;
-    transition: width 500ms ease-in-out;
-    width: 50rem;
+    transition: width 1s ease-in-out;
+    width: 30rem;
     position: fixed;
     background-color:#2C2528;
     transform:translate(-50%, -100%);
