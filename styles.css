@@ -188,7 +188,9 @@ body::-webkit-scrollbar-thumb {
     animation-name: slideFromTop;
     animation-timing-function: ease-out;
 }
-
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 @keyframes fadein {
     from {
         opacity: 0%;
