@@ -27,7 +27,6 @@
     z-index: 2;
     width: 40%;
     background-color: #2C2528;
-    text-shadow: 2px 2px 5px #D3EAEE ;
     margin: 10px;
     transition: transform 0.5s ease 0s;
     animation-name: slideFromTop;
