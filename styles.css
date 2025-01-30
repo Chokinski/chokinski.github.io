@@ -213,3 +213,126 @@ a, a:visited, a:hover, a:active {
     }
 
 }
+/* iPhone & Small Mobile Styles (up to 414px wide) */
+@media screen and (max-width: 414px) {
+    /* General Body and Layout Adjustments */
+    body {
+        font-size: 14px; /* Smaller font for mobile */
+    }
+
+    .main {
+        margin-top: 2rem; /* Reduce the top margin for mobile screens */
+        padding: 0 1rem; /* Add some padding for mobile */
+    }
+
+    /* Adjust Paragraph Styles for Mobile */
+    .pStyle {
+        width: 100%; /* Full width for the mobile screen */
+        max-width: 100%; /* Prevents it from exceeding the screen width */
+        padding: 1rem; /* Adjust padding for mobile */
+    }
+
+    /* Adjust Navbar Styles */
+    .navbar {
+        width: 100%; /* Make the navbar full width */
+        height: auto; /* Auto height on mobile */
+        padding: 1rem 0; /* Add padding on top and bottom */
+        opacity: 1; /* Remove opacity for clarity on mobile */
+        border-radius: 0; /* No rounded corners */
+        transform: none; /* Remove transform */
+        position: relative; /* Position navbar normally */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack navbar items vertically on mobile */
+        align-items: center; /* Center items in the navbar */
+    }
+
+    .nav-link {
+        width: 100%; /* Make links fill the width */
+        padding: 1rem; /* Adjust padding for mobile links */
+        text-align: center; /* Center the text inside the links */
+    }
+
+    /* Adjust Heading Sizes */
+    .h2 {
+        font-size: 30px; /* Slightly smaller font size for mobile */
+    }
+
+    /* Adjust List Items for Mobile */
+    .ul {
+        flex-direction: column; /* Stack list items vertically */
+    }
+
+    .liStyle {
+        width: 80%; /* Make list items take up more space */
+        margin: 1rem auto; /* Adjust margin for list items */
+    }
+
+    /* Hide Link Text in Navbar on Mobile */
+    .link-text {
+        display: block; /* Make it visible on mobile */
+        margin-top: 1rem; /* Space it out from the navbar */
+    }
+
+    /* Adjust Scrollbar for Mobile */
+    body::-webkit-scrollbar {
+        width: 0.2rem; /* Make scrollbar smaller */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: #A289BE; /* Lighter scrollbar color */
+    }
+}
+
+/* Tablet Styles (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust Body and Layout for Tablets */
+    body {
+        font-size: 16px; /* Increase font size slightly for tablets */
+    }
+
+    .main {
+        margin-top: 3rem; /* Adjust top margin */
+        padding: 0 2rem; /* Add more padding for tablets */
+    }
+
+    /* Adjust Paragraph Styles for Tablets */
+    .pStyle {
+        width: 80%; /* More width on tablets */
+        max-width: 80%;
+        padding: 1.5rem; /* More padding */
+    }
+
+    /* Navbar Adjustments for Tablets */
+    .navbar {
+        width: 100%; /* Full-width navbar for tablets */
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    .navbar-nav {
+        flex-direction: row; /* Keep navbar items in a row for tablets */
+    }
+
+    .nav-link {
+        width: auto; /* Reset width for navbar links */
+        padding: 1rem; /* Adjust padding for links */
+    }
+
+    /* Adjust Heading Sizes for Tablets */
+    .h2 {
+        font-size: 40px; /* Larger font size for tablets */
+    }
+
+    /* Adjust List Items for Tablets */
+    .liStyle {
+        width: 70%; /* List items get less space on tablet */
+        margin: 1.5rem auto; /* Margin adjustment */
+    }
+}
+
+/* No Changes for Laptops - Default styles for screens wider than 1024px */
+@media screen and (min-width: 1025px) {
+    /* No additional styles for laptops or larger screens */
+}
